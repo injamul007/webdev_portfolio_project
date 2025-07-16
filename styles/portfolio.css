@@ -237,9 +237,11 @@ input[type="text"], input[type="email"] {
 
 .footer_textarea {
   border: none;
+  border-radius: 6px;
   width: 100%;
   height: 100px;
   padding: 14px 20px;
+  font-size: 18px;
   margin-bottom: 30px;
 }
 
@@ -248,3 +250,40 @@ input[type="text"], input[type="email"] {
   height: 26px;
 }
 /* Footer section End here */
+
+/*? Responsive Media query for small devices */
+
+@media screen and (max-width: 576px) {
+  .skills_container,.resume_container, footer, .about_items,.section_description, .banner, nav, nav ul {
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+  }
+  .header {
+    background-image: none;
+    margin-top: 10px;
+  }
+  nav ul li {
+    margin: 10px;
+  }
+  footer, .about {
+    padding: 10px;
+  }
+  .footer_column {
+    width: 100%;
+  }
+  input[type="text"], input[type="email"], .footer_textarea {
+    width: 98%;
+  }
+  .banner_profile_pic {
+    width: 100%;
+    height: 100%;
+    margin-bottom: -70px;
+  }
+  .banner_content .btn1 {
+    margin-bottom: 16px;
+  }
+  .banner_content .btn2 {
+    margin-bottom: 20px;
+  }
+}
